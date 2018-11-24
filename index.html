@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Bookmarks</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body onload="fetchBookmarks()">
+
+    <div class="container">
+        <h2 class="text-muted">Elvz Bookmarks</h2>
+    </div>
+
+    <main role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Bookmark Your Pages</h1>
+          <form id="myForm">
+              <div class="form-group">
+                  <label for="">Site</label>
+                  <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+              </div>
+              <div class="form-group">
+                <label for="">URL</label>
+                <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-12">
+            <div id="bookmarksResult"></div>
+          </div>
+        <hr>
+      </div> <!-- /container -->
+    </main>
+
+    <footer class="container">
+      <p>&copy; 2018 Elvz Bookmarks</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
